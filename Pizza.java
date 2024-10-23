@@ -14,6 +14,12 @@ public class Pizza {
     private String size;
     private String pizzaChain;
 
+    public Pizza(List<String> selectedToppings, String size, String pizzaChain) {
+        this.selectedToppings = selectedToppings;
+        this.size = size;
+        this.pizzaChain = pizzaChain;
+    }
+
     public List<String> getSelectedToppings() {
         return selectedToppings;
     }
@@ -38,12 +44,6 @@ public class Pizza {
         this.pizzaChain = pizzaChain;
     }
 
-    public Pizza(List<String> selectedToppings, String size, String pizzaChain) {
-        this.selectedToppings = selectedToppings;
-        this.size = size;
-        this.pizzaChain = pizzaChain;
-    }
-
     public void addTopping(String topping) {
         if (ALL_TOPPINGS.contains(topping) && !selectedToppings.contains(topping)) {
             selectedToppings.add(topping);
@@ -51,13 +51,16 @@ public class Pizza {
     }
 
     public void eat() {
-        System.out.println("Pizza is from:" + pizzaChain);
+        System.out.println("Pizza is from: " + pizzaChain);
         System.out.println("Size is " + size);
         System.out.print("Selected toppings: ");
-        for (String topping : selectedToppings) {
-            System.out.print(topping + " ");
+        for (int i = 0; i < selectedToppings.size(); i++) {
+            System.out.print(selectedToppings.get(i));
+            if (i != selectedToppings.size() - 1) {
+                System.out.print(", ");
+            }
         }
-        System.out.println();
+        System.out.println("\n");
     }
 
 }
