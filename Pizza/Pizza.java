@@ -1,3 +1,5 @@
+package Pizza;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,7 +53,7 @@ public class Pizza {
     }
 
     public void eat() {
-        System.out.println("Pizza is from: " + pizzaChain);
+        System.out.println("Pizza.Pizza is from: " + pizzaChain);
         System.out.println("Size is " + size);
         System.out.print("Selected toppings: ");
         for (int i = 0; i < selectedToppings.size(); i++) {
