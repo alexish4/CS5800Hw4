@@ -14,7 +14,7 @@ public class MacroDriver {
         Customer bob = new Customer("Bob", "Nut Allergy");
         Customer steven = new Customer("Steven", "Vegan");
 
-        MacroNutrientFactory macroFactory = new MacroNutrientFactory();
+        MacroNutrientFactory macroFactory = MacroNutrientFactory.getInstance();
 
         john.setDiet(macroFactory.getMacroNutrientMeal(john.getDietType()));
         jane.setDiet(macroFactory.getMacroNutrientMeal(jane.getDietType()));

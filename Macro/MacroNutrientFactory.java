@@ -1,6 +1,18 @@
 package Macro;
 
 public class MacroNutrientFactory {
+    private static MacroNutrientFactory instance;
+
+    // Private constructor to prevent instantiation
+    private MacroNutrientFactory() {}
+
+    public static MacroNutrientFactory getInstance() {
+        if (instance == null) {
+            instance = new MacroNutrientFactory();
+        }
+        return instance;
+    }
+
     public Diet getMacroNutrientMeal(String dietType) {
         switch (dietType) {
             case "No Restrictions":
