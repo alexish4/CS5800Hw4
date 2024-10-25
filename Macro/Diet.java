@@ -20,7 +20,7 @@ public abstract class Diet {
     protected String chosenProtein;
     protected String chosenFat;
 
-    public abstract Diet makeDiet();
+    public abstract void makeDiet();
 
     public abstract void chooseCarb();
     public abstract void chooseProtein();

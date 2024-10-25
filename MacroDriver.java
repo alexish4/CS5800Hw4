@@ -25,11 +25,11 @@ public class MacroDriver {
 
         //System.out.println(john.getDiet().);
 
-        john.getDiet().printDiet();
-        jane.getDiet().printDiet();
-        jimmy.getDiet().printDiet();
-        joe.getDiet().printDiet();
-        bob.getDiet().printDiet();
-        steven.getDiet().printDiet();
+        john.printCustomerAndDiet();
+        jane.printCustomerAndDiet();
+        jimmy.printCustomerAndDiet();
+        joe.printCustomerAndDiet();
+        bob.printCustomerAndDiet();
+        steven.printCustomerAndDiet();
     }
 }

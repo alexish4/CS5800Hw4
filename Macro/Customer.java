@@ -33,4 +33,12 @@ public class Customer {
     public void setDiet(Diet diet) {
         this.diet = diet;
     }
+
+    public void printCustomerAndDiet() {
+        System.out.println("Customer Name: " + name);
+        System.out.println("Diet Type: " + dietType);
+        diet.printDiet();
+
+        System.out.println();
+    }
 }

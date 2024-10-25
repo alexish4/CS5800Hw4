@@ -4,13 +4,10 @@ import java.util.Random;
 
 public class VeganDiet extends Diet {
     @Override
-    public Diet makeDiet() {
-        VeganDiet diet = new VeganDiet();
-        diet.chooseCarb();
-        diet.chooseProtein();
-        diet.chooseFat();
-
-        return diet;
+    public void makeDiet() {
+        this.chooseCarb();
+        this.chooseProtein();
+        this.chooseFat();
     }
 
     @Override
